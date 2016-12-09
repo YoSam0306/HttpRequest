@@ -7,6 +7,7 @@ import sys,re
 if sys.version_info<(3,0):
     import cookielib
 else:
+    import http.cookiejar as cookielib
 
 def GetCookie(URL):
     cookie=cookielib.CookieJar()
