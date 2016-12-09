@@ -14,3 +14,7 @@ cookiee=cookie.GetCookie(URL)
 print(cookiee)
 HTML=login.PostLogin(cookiee,USERNAME,USERPASSWD)
 print(HTML)
+if 'Dashboard' in HTML.decode():
+    print("App Online")
+else:
+    print("App Offline")
